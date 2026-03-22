@@ -1,0 +1,53 @@
+name: LMReader
+options:
+  minimumXcodeGenVersion: 2.38.0
+  bundleIdPrefix: com.cunzhi
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: com.cunzhi.LMReader
+    SWIFT_VERSION: 6.0
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 0.1.0
+    DEVELOPMENT_TEAM: UM3Z9G5DNH
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+    INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+    INFOPLIST_KEY_CFBundleDisplayName: LM Reader
+    INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone:
+      - UIInterfaceOrientationPortrait
+      - UIInterfaceOrientationLandscapeLeft
+      - UIInterfaceOrientationLandscapeRight
+    INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad:
+      - UIInterfaceOrientationPortrait
+      - UIInterfaceOrientationPortraitUpsideDown
+      - UIInterfaceOrientationLandscapeLeft
+      - UIInterfaceOrientationLandscapeRight
+targets:
+  LMReader:
+    type: application
+    platform:
+      - iOS
+      - macOS
+    deploymentTarget:
+      iOS: "17.0"
+      macOS: "14.0"
+    sources:
+      - path: App/Sources
+      - path: App/Resources
+    settings:
+      base:
+        PRODUCT_NAME: LMReader
+        PRODUCT_BUNDLE_IDENTIFIER: com.cunzhi.LMReader
+        PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]: com.cunzhi.LMReader.macOS
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_ENTITLEMENTS[sdk=iphone*]: App/Support/LMReader_iOS.entitlements
+        CODE_SIGN_ENTITLEMENTS[sdk=macosx*]: App/Support/LMReader_macOS.entitlements
+        SUPPORTS_MACCATALYST: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.productivity
+        INFOPLIST_KEY_NSDocumentsFolderUsageDescription: Import Markdown files generated from NotebookLM.
+        INFOPLIST_KEY_NSUbiquitousContainers: ""
+    scheme:
+      testTargets: []

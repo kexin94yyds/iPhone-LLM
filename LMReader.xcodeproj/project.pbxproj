@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05AB598A6A2DFC8226878E18 /* IOSReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3FBFA7E8ED775BA1655B8 /* IOSReaderView.swift */; };
+		26D9BC5DC1A85162A59FD45E /* ReaderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB18447E4894C809BFFCB8 /* ReaderDetailView.swift */; };
+		5583FCBF0B313E92B2DBD90E /* LMReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E361E0723F54B7064A5EB51 /* LMReaderApp.swift */; };
+		57DA054BF23760585931B10E /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F924051C95717B8E24B716 /* CloudSyncService.swift */; };
+		5EF2F27CEA8E6F492FF37198 /* LMReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E361E0723F54B7064A5EB51 /* LMReaderApp.swift */; };
+		6567CD29EE01BC5A906C85FB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DA7B0F88422570E4D3BDB /* Models.swift */; };
+		6EA6B2C8795F5D05D3D77657 /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F924051C95717B8E24B716 /* CloudSyncService.swift */; };
+		77BFBA6227F76D04E3151CB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A9BB8923FCFEAD5A664DF /* ContentView.swift */; };
+		81E20362F4678E15905C9227 /* ImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A9129B86422ACD5B334B15 /* ImportService.swift */; };
+		840CE7C1D8C0211147C4173C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED5A9DE27C7E555541FE7E /* AppModel.swift */; };
+		8B726F92731C87EBED7F203C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED5A9DE27C7E555541FE7E /* AppModel.swift */; };
+		94700745A9C732C1C0BF96B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F73C87CBD146238D946F5 /* Assets.xcassets */; };
+		9A019C7747DB8B9554BA2EE3 /* IOSReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3FBFA7E8ED775BA1655B8 /* IOSReaderView.swift */; };
+		9A84F7BE843D9AC10592E791 /* FolderBookmarkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573B40D0762980DE40B0A75 /* FolderBookmarkStore.swift */; };
+		A57ACC6DA034E34F67CE7C05 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DA7B0F88422570E4D3BDB /* Models.swift */; };
+		B16A8C449042193150961315 /* ReaderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB18447E4894C809BFFCB8 /* ReaderDetailView.swift */; };
+		BC41F70A57E4A2B57026F7FE /* ImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A9129B86422ACD5B334B15 /* ImportService.swift */; };
+		C4688DA85B458BECD2BE2325 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A9BB8923FCFEAD5A664DF /* ContentView.swift */; };
+		C4B0F49C0DB454850D96B5D0 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE570BA1FED88DDDEE7D44E /* AppContainer.swift */; };
+		C94C469A6B37F3018D95DC9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F73C87CBD146238D946F5 /* Assets.xcassets */; };
+		E34D8D49FF7B903BB4414CDD /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE570BA1FED88DDDEE7D44E /* AppContainer.swift */; };
+		F1FCA5837E0027C87DEE1D43 /* FolderBookmarkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573B40D0762980DE40B0A75 /* FolderBookmarkStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0573B40D0762980DE40B0A75 /* FolderBookmarkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderBookmarkStore.swift; sourceTree = "<group>"; };
+		1F98F0062288F902CD256599 /* LMReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E361E0723F54B7064A5EB51 /* LMReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMReaderApp.swift; sourceTree = "<group>"; };
+		6BE3FBFA7E8ED775BA1655B8 /* IOSReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSReaderView.swift; sourceTree = "<group>"; };
+		6DDB18447E4894C809BFFCB8 /* ReaderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderDetailView.swift; sourceTree = "<group>"; };
+		77F924051C95717B8E24B716 /* CloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncService.swift; sourceTree = "<group>"; };
+		8C8F73C87CBD146238D946F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A253E4F1C2B5C6C4514F0A85 /* LMReader.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LMReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5ED5A9DE27C7E555541FE7E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		BD8DA7B0F88422570E4D3BDB /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BEE570BA1FED88DDDEE7D44E /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		C5A9129B86422ACD5B334B15 /* ImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportService.swift; sourceTree = "<group>"; };
+		CC8A9BB8923FCFEAD5A664DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1A8830DEE0988AA3195465D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A253E4F1C2B5C6C4514F0A85 /* LMReader.app */,
+				1F98F0062288F902CD256599 /* LMReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50AFC7BC80BC0C3DDE2FFD21 = {
+			isa = PBXGroup;
+			children = (
+				E9CE009AB02BF525F860CE3C /* Resources */,
+				D5AC6EDC09CE7162FB1D7A25 /* Sources */,
+				1A8830DEE0988AA3195465D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5AC6EDC09CE7162FB1D7A25 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BEE570BA1FED88DDDEE7D44E /* AppContainer.swift */,
+				B5ED5A9DE27C7E555541FE7E /* AppModel.swift */,
+				77F924051C95717B8E24B716 /* CloudSyncService.swift */,
+				CC8A9BB8923FCFEAD5A664DF /* ContentView.swift */,
+				0573B40D0762980DE40B0A75 /* FolderBookmarkStore.swift */,
+				C5A9129B86422ACD5B334B15 /* ImportService.swift */,
+				6BE3FBFA7E8ED775BA1655B8 /* IOSReaderView.swift */,
+				5E361E0723F54B7064A5EB51 /* LMReaderApp.swift */,
+				BD8DA7B0F88422570E4D3BDB /* Models.swift */,
+				6DDB18447E4894C809BFFCB8 /* ReaderDetailView.swift */,
+			);
+			name = Sources;
+			path = App/Sources;
+			sourceTree = "<group>";
+		};
+		E9CE009AB02BF525F860CE3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F73C87CBD146238D946F5 /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = App/Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		859EFE8F7C1F88F62696D4AE /* LMReader_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F5AF1C7F8F35EB07B647A9C /* Build configuration list for PBXNativeTarget "LMReader_iOS" */;
+			buildPhases = (
+				8B5BF5A7DA2AB6748BB5D906 /* Sources */,
+				82BD9A9510CFAF147B747E87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LMReader_iOS;
+			packageProductDependencies = (
+			);
+			productName = LMReader_iOS;
+			productReference = A253E4F1C2B5C6C4514F0A85 /* LMReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3E27FEBA870C4175BD33849 /* LMReader_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3005E3982B29EB9741ABF4B9 /* Build configuration list for PBXNativeTarget "LMReader_macOS" */;
+			buildPhases = (
+				52D5A1E4EB72A6A632711871 /* Sources */,
+				A61F78CA663BB4518AE47479 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LMReader_macOS;
+			packageProductDependencies = (
+			);
+			productName = LMReader_macOS;
+			productReference = 1F98F0062288F902CD256599 /* LMReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF896F354832501E41D785F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					859EFE8F7C1F88F62696D4AE = {
+						DevelopmentTeam = UM3Z9G5DNH;
+						ProvisioningStyle = Automatic;
+					};
+					D3E27FEBA870C4175BD33849 = {
+						DevelopmentTeam = UM3Z9G5DNH;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 265EDAA4617BA935CCB03A46 /* Build configuration list for PBXProject "LMReader" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 50AFC7BC80BC0C3DDE2FFD21;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				859EFE8F7C1F88F62696D4AE /* LMReader_iOS */,
+				D3E27FEBA870C4175BD33849 /* LMReader_macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82BD9A9510CFAF147B747E87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94C469A6B37F3018D95DC9E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61F78CA663BB4518AE47479 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94700745A9C732C1C0BF96B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52D5A1E4EB72A6A632711871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B0F49C0DB454850D96B5D0 /* AppContainer.swift in Sources */,
+				840CE7C1D8C0211147C4173C /* AppModel.swift in Sources */,
+				6EA6B2C8795F5D05D3D77657 /* CloudSyncService.swift in Sources */,
+				77BFBA6227F76D04E3151CB6 /* ContentView.swift in Sources */,
+				9A84F7BE843D9AC10592E791 /* FolderBookmarkStore.swift in Sources */,
+				9A019C7747DB8B9554BA2EE3 /* IOSReaderView.swift in Sources */,
+				81E20362F4678E15905C9227 /* ImportService.swift in Sources */,
+				5EF2F27CEA8E6F492FF37198 /* LMReaderApp.swift in Sources */,
+				6567CD29EE01BC5A906C85FB /* Models.swift in Sources */,
+				B16A8C449042193150961315 /* ReaderDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B5BF5A7DA2AB6748BB5D906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34D8D49FF7B903BB4414CDD /* AppContainer.swift in Sources */,
+				8B726F92731C87EBED7F203C /* AppModel.swift in Sources */,
+				57DA054BF23760585931B10E /* CloudSyncService.swift in Sources */,
+				C4688DA85B458BECD2BE2325 /* ContentView.swift in Sources */,
+				F1FCA5837E0027C87DEE1D43 /* FolderBookmarkStore.swift in Sources */,
+				05AB598A6A2DFC8226878E18 /* IOSReaderView.swift in Sources */,
+				BC41F70A57E4A2B57026F7FE /* ImportService.swift in Sources */,
+				5583FCBF0B313E92B2DBD90E /* LMReaderApp.swift in Sources */,
+				A57ACC6DA034E34F67CE7C05 /* Models.swift in Sources */,
+				26D9BC5DC1A85162A59FD45E /* ReaderDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		27CA594719FF16F6095F5C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphone*]" = App/Support/LMReader_iOS.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = App/Support/LMReader_macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "Import Markdown files generated from NotebookLM.";
+				INFOPLIST_KEY_NSUbiquitousContainers = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cunzhi.LMReader;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.cunzhi.LMReader.macOS;
+				PRODUCT_NAME = LMReader;
+				SDKROOT = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		30C9026A06B736E56B043BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = UM3Z9G5DNH;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "LM Reader";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = (
+					UIInterfaceOrientationPortrait,
+					UIInterfaceOrientationPortraitUpsideDown,
+					UIInterfaceOrientationLandscapeLeft,
+					UIInterfaceOrientationLandscapeRight,
+				);
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = (
+					UIInterfaceOrientationPortrait,
+					UIInterfaceOrientationLandscapeLeft,
+					UIInterfaceOrientationLandscapeRight,
+				);
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cunzhi.LMReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		694DC24F933E52422006175C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphone*]" = App/Support/LMReader_iOS.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = App/Support/LMReader_macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "Import Markdown files generated from NotebookLM.";
+				INFOPLIST_KEY_NSUbiquitousContainers = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cunzhi.LMReader;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.cunzhi.LMReader.macOS;
+				PRODUCT_NAME = LMReader;
+				SDKROOT = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		9456C0D9C0C08D91CB737EC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphone*]" = App/Support/LMReader_iOS.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = App/Support/LMReader_macOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "Import Markdown files generated from NotebookLM.";
+				INFOPLIST_KEY_NSUbiquitousContainers = "";
+				INFOPLIST_KEY_UIBackgroundModes = (
+					audio,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cunzhi.LMReader;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.cunzhi.LMReader.macOS;
+				PRODUCT_NAME = LMReader;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B144535C9984495C1728A3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphone*]" = App/Support/LMReader_iOS.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = App/Support/LMReader_macOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "Import Markdown files generated from NotebookLM.";
+				INFOPLIST_KEY_NSUbiquitousContainers = "";
+				INFOPLIST_KEY_UIBackgroundModes = (
+					audio,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cunzhi.LMReader;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.cunzhi.LMReader.macOS;
+				PRODUCT_NAME = LMReader;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C64AF10CE60AC7E48EC907C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = UM3Z9G5DNH;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "LM Reader";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = (
+					UIInterfaceOrientationPortrait,
+					UIInterfaceOrientationPortraitUpsideDown,
+					UIInterfaceOrientationLandscapeLeft,
+					UIInterfaceOrientationLandscapeRight,
+				);
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = (
+					UIInterfaceOrientationPortrait,
+					UIInterfaceOrientationLandscapeLeft,
+					UIInterfaceOrientationLandscapeRight,
+				);
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cunzhi.LMReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F5AF1C7F8F35EB07B647A9C /* Build configuration list for PBXNativeTarget "LMReader_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9456C0D9C0C08D91CB737EC4 /* Debug */,
+				B144535C9984495C1728A3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		265EDAA4617BA935CCB03A46 /* Build configuration list for PBXProject "LMReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C9026A06B736E56B043BD5 /* Debug */,
+				C64AF10CE60AC7E48EC907C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3005E3982B29EB9741ABF4B9 /* Build configuration list for PBXNativeTarget "LMReader_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694DC24F933E52422006175C /* Debug */,
+				27CA594719FF16F6095F5C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF896F354832501E41D785F9 /* Project object */;
+}
