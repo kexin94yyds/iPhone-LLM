@@ -76,18 +76,20 @@ enum CloudSyncService {
     static func syncFolderMirror(from sourceFolderURL: URL) throws {
         let mirrorRootURL = try mirrorRootURL()
         let fileManager = FileManager.default
+        let documentsURL = try snapshotDirectoryURL()
+        let stagingURL = documentsURL.appendingPathComponent("\(mirrorDirectoryName)-staging")
+        let backupURL = documentsURL.appendingPathComponent("\(mirrorDirectoryName)-backup")
 
-        if fileManager.fileExists(atPath: mirrorRootURL.path(percentEncoded: false)) {
-            try fileManager.removeItem(at: mirrorRootURL)
-        }
-        try fileManager.createDirectory(at: mirrorRootURL, withIntermediateDirectories: true)
+        try removeItemIfPresent(at: stagingURL, using: fileManager)
+        try removeItemIfPresent(at: backupURL, using: fileManager)
+        try fileManager.createDirectory(at: stagingURL, withIntermediateDirectories: true)
 
         let sourcePath = sourceFolderURL.path(percentEncoded: false)
         let enumerator = fileManager.enumerator(atPath: sourcePath)
 
         while let relativePath = enumerator?.nextObject() as? String {
             let itemURL = sourceFolderURL.appendingPathComponent(relativePath)
-            let destinationURL = mirrorRootURL.appendingPathComponent(relativePath)
+            let destinationURL = stagingURL.appendingPathComponent(relativePath)
             let resourceValues = try itemURL.resourceValues(forKeys: [.isDirectoryKey])
 
             if resourceValues.isDirectory == true {
@@ -103,12 +105,31 @@ enum CloudSyncService {
                 try fileManager.copyItem(at: itemURL, to: destinationURL)
             }
         }
+
+        let mirrorExists = fileManager.fileExists(atPath: mirrorRootURL.path(percentEncoded: false))
+
+        do {
+            if mirrorExists {
+                try fileManager.moveItem(at: mirrorRootURL, to: backupURL)
+            }
+            try fileManager.moveItem(at: stagingURL, to: mirrorRootURL)
+            try removeItemIfPresent(at: backupURL, using: fileManager)
+        } catch {
+            try? removeItemIfPresent(at: stagingURL, using: fileManager)
+
+            if fileManager.fileExists(atPath: backupURL.path(percentEncoded: false)),
+               !fileManager.fileExists(atPath: mirrorRootURL.path(percentEncoded: false)) {
+                try? fileManager.moveItem(at: backupURL, to: mirrorRootURL)
+            }
+
+            throw error
+        }
     }
 #endif
 
     static func mirroredContentExists() -> Bool {
         guard let rootURL = try? mirrorRootURL() else { return false }
-        return FileManager.default.fileExists(atPath: rootURL.path(percentEncoded: false))
+        return directoryHasVisibleContents(at: rootURL)
     }
 
     static func listMirroredDirectory(relativePath: String = "") throws -> [CloudMirrorEntry] {
@@ -280,6 +301,30 @@ enum CloudSyncService {
             return try mirrorRootURL()
         }
         return try mirrorRootURL().appendingPathComponent(relativePath)
+    }
+
+    private static func removeItemIfPresent(at url: URL, using fileManager: FileManager) throws {
+        guard fileManager.fileExists(atPath: url.path(percentEncoded: false)) else { return }
+        try fileManager.removeItem(at: url)
+    }
+
+    private static func directoryHasVisibleContents(at url: URL) -> Bool {
+        guard FileManager.default.fileExists(atPath: url.path(percentEncoded: false)) else { return false }
+
+        let enumerator = FileManager.default.enumerator(
+            at: url,
+            includingPropertiesForKeys: [.isHiddenKey],
+            options: [.skipsPackageDescendants]
+        )
+
+        while let itemURL = enumerator?.nextObject() as? URL {
+            let values = try? itemURL.resourceValues(forKeys: [.isHiddenKey])
+            if values?.isHidden != true {
+                return true
+            }
+        }
+
+        return false
     }
 }
 

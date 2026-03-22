@@ -93,12 +93,7 @@ struct ContentView: View {
         appModel.hasAttemptedAutomaticImport = true
 
         guard items.isEmpty else {
-            do {
-                try syncMirroredFolderToICloud()
-                appModel.importStatusMessage = "Library ready, mirrored folder to iPhone"
-            } catch {
-                appModel.importStatusMessage = "Library ready, folder mirror failed: \(error.localizedDescription)"
-            }
+            appModel.importStatusMessage = "Library ready. Use Sync iPhone Now when you want to refresh the mirror."
             return
         }
 

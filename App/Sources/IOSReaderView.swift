@@ -115,7 +115,7 @@ private struct IOSMirrorDirectoryView: View {
     @MainActor
     private func loadDirectory(forceReloadRootPath: Bool = true) async {
         guard CloudSyncService.mirroredContentExists() else {
-            statusMessage = "Mac 还没有把整个文件夹镜像到 iPhone"
+            statusMessage = "Mac 镜像还没完成，或上一次同步失败后留下了空目录"
             return
         }
 
